@@ -8,13 +8,15 @@ namespace CIFPCarlosIII.ED.UT04.GrupoX
         public int fuerza;
         public string arma;
 
-        /*
-         * Se paso el parametro nombre de la clase base
-         */
+       
         public Guerrero()
         {
             
         }
+        
+        /// <summary>
+        /// Se paso el parametro nombre de la clase base Personaje a la clase hija Guerrero
+        /// </summary>
         public Guerrero(string nombre) :base(nombre)
         {
             this.fuerza = 15;

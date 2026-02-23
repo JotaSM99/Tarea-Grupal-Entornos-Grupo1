@@ -5,9 +5,9 @@ namespace CIFPCarlosIII.ED.UT04.GrupoX
 {
     public class Personaje
     {
-        /*
-         * Se creo un atributo publico de tipo string llamado nombre
-         */
+        /// <summary>
+        /// Se creo un atributo publico de tipo string llamado nombre
+        /// </summary>
         public string nombre; 
         public int vida;
         public int nivel;
