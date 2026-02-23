@@ -4,7 +4,7 @@ namespace CIFPCarlosIII.ED.UT04.GrupoX
 
 {
     /// <summary>
-    /// La clase principal del programa, donde se ejecuta todo.
+    /// La clase principal donde se ejecuta el programa principal
     /// </summary>
     class Program
     {
