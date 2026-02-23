@@ -7,7 +7,14 @@ namespace CIFPCarlosIII.ED.UT04.GrupoX
     {
         public int almasCapturadas;
 
-        public Nigromante(string nombre) :base(nombre)
+        public Nigromante(int mana, string hechizo, int almasCapturadas)
+        {
+            Mana = mana;
+            this.hechizo = hechizo;
+            this.almasCapturadas = almasCapturadas;
+        }
+        
+        public Nigromante()
         {
             this.almasCapturadas = 0;
             this.hechizo = "Drenar vida";
