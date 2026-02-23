@@ -7,6 +7,10 @@ namespace CIFPCarlosIII.ED.UT04.GrupoX
     {
         public int almasCapturadas;
 
+        public Nigromante()
+        {
+            
+        }
         public Nigromante(string nombre) :base(nombre)
         {
             this.almasCapturadas = 0;

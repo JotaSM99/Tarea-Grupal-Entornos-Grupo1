@@ -15,6 +15,10 @@ namespace CIFPCarlosIII.ED.UT04.GrupoX
         /*
          * Se paso el parametro nombre de la clase base
          */
+        public Mago()
+        {
+            
+        }
         public Mago(string nombre) :base(nombre)
         {
             Mana = 100;

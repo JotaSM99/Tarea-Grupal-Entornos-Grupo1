@@ -12,6 +12,10 @@ namespace CIFPCarlosIII.ED.UT04.GrupoX
         public int vida;
         public int nivel;
 
+        public Personaje()
+        {
+            
+        }
         public Personaje(string nombre)
         {
             this.nombre = nombre;
