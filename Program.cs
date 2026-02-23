@@ -3,6 +3,9 @@ using System;
 namespace CIFPCarlosIII.ED.UT04.GrupoX
 
 {
+    /// <summary>
+    /// La clase principal del programa, donde se ejecuta todo.
+    /// </summary>
     class Program
     {
         static void Main(string[] args)
@@ -30,7 +33,7 @@ namespace CIFPCarlosIII.ED.UT04.GrupoX
             berserker.AtaqueFurioso();
             Console.WriteLine("\n" + berserker.MostrarInfo());
             
-
+            
             Console.WriteLine("\n--- Mago ---");
             Mago magi = new Mago();
             magi.nombre = "Merlín";
