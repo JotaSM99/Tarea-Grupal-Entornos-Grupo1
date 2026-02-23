@@ -7,18 +7,20 @@ namespace CIFPCarlosIII.ED.UT04.GrupoX
     {
         /*
          Se encapsulo el atributo mediante una propiedad publica con 
-         acceso a get y un internal set 
+         acceso a get y set 
          */
         public static int Mana { get; set; } 
         public string hechizo;
 
-        /*
-         * Se paso el parametro nombre de la clase base
-         */
+        
         public Mago()
         {
             
         }
+        
+        /// <summary>
+        /// Se paso el parametro nombre de la clase base Personaje a la clase hija Mago
+        /// </summary>
         public Mago(string nombre) :base(nombre)
         {
             Mana = 100;

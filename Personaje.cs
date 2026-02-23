@@ -5,9 +5,9 @@ namespace CIFPCarlosIII.ED.UT04.GrupoX
 {
     public class Personaje
     {
-        /*
-         * Se creo un atributo publico de tipo string llamado nombre
-         */
+        /// <summary>
+        /// Se creo un atributo publico de tipo string llamado nombre
+        /// </summary>
         public string nombre; 
         public int vida;
         public int nivel;
@@ -39,6 +39,15 @@ namespace CIFPCarlosIII.ED.UT04.GrupoX
             nivel++;
             vida += 20;
             Console.WriteLine(nombre + " ha subido al nivel " + nivel + "!");
+        }
+        
+        public string MostrarInfo()
+        {
+            return "=== INFORMACIÓN DEL PERSONAJE ===" +
+                   "\nNombre: " + nombre +
+                   "\nClase: " + this.GetType().Name +
+                   "\nNivel: " + nivel +
+                   "\nVida: " + vida;
         }
     }
 }

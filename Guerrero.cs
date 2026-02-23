@@ -8,13 +8,15 @@ namespace CIFPCarlosIII.ED.UT04.GrupoX
         public int fuerza;
         public string arma;
 
-        /*
-         * Se paso el parametro nombre de la clase base
-         */
+       
         public Guerrero()
         {
             
         }
+        
+        /// <summary>
+        /// Se paso el parametro nombre de la clase base Personaje a la clase hija Guerrero
+        /// </summary>
         public Guerrero(string nombre) :base(nombre)
         {
             this.fuerza = 15;
@@ -30,6 +32,11 @@ namespace CIFPCarlosIII.ED.UT04.GrupoX
         public void DefenderseConEscudo()
         {
             Console.WriteLine(nombre + " se defiende con su escudo, reduciendo el daño recibido.");
+        }
+
+        public string MostrarInfo()
+        {
+            return MostrarInfo() + $"Fuerza: {fuerza}" + $"Arma: {arma}";
         }
     }
 }

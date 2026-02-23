@@ -43,14 +43,7 @@ namespace CIFPCarlosIII.ED.UT04.GrupoX
 
         public string MostrarInfo()
         {
-            return "=== INFORMACIÓN DEL PERSONAJE ===" +
-                   "\nNombre: " + nombre +
-                   "\nClase: " + this.GetType().Name +
-                   "\nNivel: " + nivel +
-                   "\nVida: " + vida +
-                   "\nFuerza: " + fuerza +
-                   "\nArma: " + arma +
-                   "\nFuria: " + furia;
+            return MostrarInfo() + $"Furia: {furia}";
         }
     }
 }
