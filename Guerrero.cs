@@ -7,7 +7,10 @@ namespace ProyectoRPG
         public int fuerza;
         public string arma;
 
-        public Guerrero()
+        /*
+         * Se paso el parametro nombre de la clase base
+         */
+        public Guerrero(string nombre) :base(nombre)
         {
             this.fuerza = 15;
             this.arma = "Espada";

@@ -4,12 +4,16 @@ namespace ProyectoRPG
 {
     public class Personaje
     {
-        public string nombre;
+        /*
+         * Se creo un atributo publico de tipo string llamado nombre
+         */
+        public string nombre; 
         public int vida;
         public int nivel;
 
-        public Personaje()
+        public Personaje(string nombre)
         {
+            this.nombre = nombre;
             this.vida = 100;
             this.nivel = 1;
         }
