@@ -22,12 +22,13 @@ namespace ProyectoRPG
             guer.DefenderseConEscudo();
 
             Console.WriteLine("\n--- Berserker ---");
-            Berserker bers = new Berserker();
-            bers.nombre = "Destructor";
-            bers.EntrarEnFuria();
-            bers.EntrarEnFuria();
-            bers.AtaqueFurioso();
-            Console.WriteLine("\n" + bers.MostrarInfo());
+            Berserker berserker = new Berserker(10, "Hacha", 25);
+            berserker.nombre = "Destructor";
+            berserker.EntrarEnFuria();
+            berserker.EntrarEnFuria();
+            berserker.AtaqueFurioso();
+            Console.WriteLine("\n" + berserker.MostrarInfo());
+            
 
             Console.WriteLine("\n--- Mago ---");
             Mago magi = new Mago();
@@ -38,12 +39,12 @@ namespace ProyectoRPG
             magi.LanzarHechizo();
 
             Console.WriteLine("\n--- Nigromante ---");
-            Nigromante nigro = new Nigromante();
-            nigro.nombre = "Señor Oscuro";
-            nigro.CapturarAlma();
-            nigro.CapturarAlma();
-            nigro.InvocarNoMuerto();
-            nigro.DrenarVida();
+            Nigromante nigromante = new Nigromante(120, "Lanzar Fuego", 40);
+            nigromante.nombre = "Señor Oscuro";
+            nigromante.CapturarAlma();
+            nigromante.CapturarAlma();
+            nigromante.InvocarNoMuerto();
+            nigromante.DrenarVida();
 
             Console.WriteLine("\n=== FIN DE LA DEMOSTRACIÓN ===");
             Console.ReadLine();

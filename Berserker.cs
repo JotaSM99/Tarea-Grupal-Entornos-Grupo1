@@ -6,6 +6,13 @@ namespace ProyectoRPG
     {
         public int furia;
 
+        public Berserker(int furia, string arma, int fuerza)
+        {
+            this.furia = furia;
+            this.arma = arma;
+            this.fuerza = fuerza;
+        }
+        
         public Berserker()
         {
             this.furia = 0;
