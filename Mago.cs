@@ -25,6 +25,12 @@ namespace CIFPCarlosIII.ED.UT04.GrupoX
             this.hechizo = "Bola de fuego";
         }
 
+        public Mago(int mana, string hechizo)
+        {
+            Mana = mana;
+            this.hechizo = hechizo;
+        }
+
         public void LanzarHechizo()
         {
             if (Mana >= 20)

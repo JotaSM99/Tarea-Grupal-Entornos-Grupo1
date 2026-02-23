@@ -6,15 +6,15 @@ namespace CIFPCarlosIII.ED.UT04.GrupoX
     public class Nigromante : Mago
     {
         public int almasCapturadas;
-
-        public Nigromante(int mana, string hechizo, int almasCapturadas)
-        {
-            Mana = mana;
-            this.hechizo = hechizo;
-            this.almasCapturadas = almasCapturadas;
-        }
         
         public Nigromante()
+        {
+            this.almasCapturadas = 0;
+            this.hechizo = "Drenar vida";
+            Mana = 120;
+        }
+        
+        public Nigromante(int almasCapturadas, string hechizo, int mana)
         {
             this.almasCapturadas = 0;
             this.hechizo = "Drenar vida";
