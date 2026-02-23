@@ -8,7 +8,7 @@ namespace ProyectoRPG
          Se encapsulo el atributo mediante una propiedad publica con 
          acceso a get y un internal set 
          */
-        public int Mana { get; internal set; } 
+        public static int Mana { get; set; } 
         public string hechizo;
 
         /*
