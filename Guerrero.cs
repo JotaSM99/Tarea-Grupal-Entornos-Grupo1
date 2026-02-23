@@ -1,13 +1,17 @@
 using System;
 
-namespace ProyectoRPG
+namespace CIFPCarlosIII.ED.UT04.GrupoX
+
 {
     public class Guerrero : Personaje
     {
         public int fuerza;
         public string arma;
 
-        public Guerrero()
+        /*
+         * Se paso el parametro nombre de la clase base
+         */
+        public Guerrero(string nombre) :base(nombre)
         {
             this.fuerza = 15;
             this.arma = "Espada";

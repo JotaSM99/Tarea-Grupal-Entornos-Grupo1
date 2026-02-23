@@ -1,25 +1,33 @@
 using System;
 
-namespace ProyectoRPG
+namespace CIFPCarlosIII.ED.UT04.GrupoX
+
 {
     public class Mago : Personaje
     {
-        public int mana;
+        /*
+         Se encapsulo el atributo mediante una propiedad publica con 
+         acceso a get y un internal set 
+         */
+        public static int Mana { get; set; } 
         public string hechizo;
 
-        public Mago()
+        /*
+         * Se paso el parametro nombre de la clase base
+         */
+        public Mago(string nombre) :base(nombre)
         {
-            this.mana = 100;
+            Mana = 100;
             this.hechizo = "Bola de fuego";
         }
 
         public void LanzarHechizo()
         {
-            if (mana >= 20)
+            if (Mana >= 20)
             {
                 Console.WriteLine(nombre + " lanza " + hechizo + "!");
-                mana -= 20;
-                Console.WriteLine("Mana restante: " + mana);
+                Mana -= 20;
+                Console.WriteLine("Mana restante: " + Mana);
             }
             else
             {
@@ -29,9 +37,9 @@ namespace ProyectoRPG
 
         public void Meditar()
         {
-            mana += 30;
-            if (mana > 100) mana = 100;
-            Console.WriteLine(nombre + " medita y recupera mana. Mana actual: " + mana);
+            Mana += 30;
+            if (Mana > 100) Mana = 100;
+            Console.WriteLine(nombre + " medita y recupera mana. Mana actual: " + Mana);
         }
     }
 }

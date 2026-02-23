@@ -6,13 +6,6 @@ namespace ProyectoRPG
     {
         public int almasCapturadas;
 
-        public Nigromante(int mana, string hechizo, int almasCapturadas)
-        {
-            this.mana = mana;
-            this.hechizo = hechizo;
-            this.almasCapturadas = almasCapturadas;
-        }
-        
         public Nigromante()
         {
             this.almasCapturadas = 0;
