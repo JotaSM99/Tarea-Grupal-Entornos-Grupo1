@@ -31,5 +31,10 @@ namespace CIFPCarlosIII.ED.UT04.GrupoX
         {
             Console.WriteLine(nombre + " se defiende con su escudo, reduciendo el daño recibido.");
         }
+
+        public string MostrarInfo()
+        {
+            return MostrarInfo() + $"Fuerza: {fuerza}" + $"Arma: {arma}";
+        }
     }
 }

@@ -40,5 +40,14 @@ namespace CIFPCarlosIII.ED.UT04.GrupoX
             vida += 20;
             Console.WriteLine(nombre + " ha subido al nivel " + nivel + "!");
         }
+        
+        public string MostrarInfo()
+        {
+            return "=== INFORMACIÓN DEL PERSONAJE ===" +
+                   "\nNombre: " + nombre +
+                   "\nClase: " + this.GetType().Name +
+                   "\nNivel: " + nivel +
+                   "\nVida: " + vida;
+        }
     }
 }
