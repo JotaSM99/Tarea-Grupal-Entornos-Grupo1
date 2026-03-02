@@ -5,6 +5,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <RootNamespace>ProyectoRPG</RootNamespace>
     <ImplicitUsings>disable</ImplicitUsings>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <Nullable>disable</Nullable>
   </PropertyGroup>
 
