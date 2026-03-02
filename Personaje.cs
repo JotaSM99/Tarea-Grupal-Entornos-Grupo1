@@ -12,7 +12,7 @@ namespace CIFPCarlosIII.ED.UT04.Grupo1
         /// <summary>
         /// Se creo un atributo publico de tipo string llamado nombre
         /// </summary>
-        public string nombre; 
+        private string nombre; 
         public int vida;
         public int nivel;
 
@@ -25,6 +25,12 @@ namespace CIFPCarlosIII.ED.UT04.Grupo1
             this.nombre = nombre;
             this.vida = 100;
             this.nivel = 1;
+        }
+
+        public string Nombre
+        {
+            get => nombre;
+            set => nombre = value;
         }
 
         public void Atacar()
