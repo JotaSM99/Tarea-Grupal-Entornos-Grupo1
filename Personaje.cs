@@ -10,7 +10,7 @@ namespace CIFPCarlosIII.ED.UT04.Grupo1
     {
         
         /// <summary>
-        /// Se creo un atributo publico de tipo string llamado nombre
+        /// Se modificio el atributo nombre para que sea private y se añadieron las propiedades get y set
         /// </summary>
         private string nombre; 
         public int vida;
