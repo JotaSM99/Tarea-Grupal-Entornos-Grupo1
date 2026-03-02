@@ -25,13 +25,13 @@ namespace CIFPCarlosIII.ED.UT04.Grupo1
 
         public void AtaquePoderoso()
         {
-            Console.WriteLine(nombre + " usa su " + arma + " para realizar un ataque poderoso!");
+            Console.WriteLine(Nombre + " usa su " + arma + " para realizar un ataque poderoso!");
             Console.WriteLine("Daño infligido: " + (fuerza * 2));
         }
 
         public void DefenderseConEscudo()
         {
-            Console.WriteLine(nombre + " se defiende con su escudo, reduciendo el daño recibido.");
+            Console.WriteLine(Nombre + " se defiende con su escudo, reduciendo el daño recibido.");
         }
 
         public string MostrarInfo()

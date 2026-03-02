@@ -37,7 +37,7 @@ namespace CIFPCarlosIII.ED.UT04.Grupo1
         {
             if (Mana >= 20)
             {
-                Console.WriteLine(nombre + " lanza " + hechizo + "!");
+                Console.WriteLine(Nombre + " lanza " + hechizo + "!");
                 Mana -= 20;
                 Console.WriteLine("Mana restante: " + Mana);
             }
@@ -51,7 +51,7 @@ namespace CIFPCarlosIII.ED.UT04.Grupo1
         {
             Mana += 30;
             if (Mana > 100) Mana = 100;
-            Console.WriteLine(nombre + " medita y recupera mana. Mana actual: " + Mana);
+            Console.WriteLine(Nombre + " medita y recupera mana. Mana actual: " + Mana);
         }
     }
 }
