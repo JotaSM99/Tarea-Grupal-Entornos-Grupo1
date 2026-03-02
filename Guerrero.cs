@@ -1,6 +1,6 @@
 using System;
 
-namespace CIFPCarlosIII.ED.UT04.GrupoX
+namespace CIFPCarlosIII.ED.UT04.Grupo1
 
 {
     public class Guerrero : Personaje

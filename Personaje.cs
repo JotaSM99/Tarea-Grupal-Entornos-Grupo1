@@ -1,8 +1,11 @@
 using System;
 
-namespace CIFPCarlosIII.ED.UT04.GrupoX
+namespace CIFPCarlosIII.ED.UT04.Grupo1
 
 {
+    /// <summary>
+    /// Se cambió el namespace a CIFPCarlosIII.ED.UT04.Grupo1
+    /// </summary>
     public class Personaje
     {
         
