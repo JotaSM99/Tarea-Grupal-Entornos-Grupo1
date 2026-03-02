@@ -1,6 +1,6 @@
 using System;
 
-namespace CIFPCarlosIII.ED.UT04.GrupoX
+namespace CIFPCarlosIII.ED.UT04.Grupo1
 
 {
     public class Berserker : Guerrero
@@ -24,14 +24,14 @@ namespace CIFPCarlosIII.ED.UT04.GrupoX
         public void EntrarEnFuria()
         {
             furia += 30;
-            Console.WriteLine(nombre + " entra en estado de furia! Furia actual: " + furia);
+            Console.WriteLine(Nombre + " entra en estado de furia! Furia actual: " + furia);
         }
 
         public void AtaqueFurioso()
         {
             if (furia >= 50)
             {
-                Console.WriteLine(nombre + " desata un ataque furioso devastador!");
+                Console.WriteLine(Nombre + " desata un ataque furioso devastador!");
                 Console.WriteLine("Daño masivo: " + (fuerza * 3 + furia));
                 furia = 0;
             }

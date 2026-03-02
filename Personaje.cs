@@ -1,14 +1,18 @@
 using System;
 
-namespace CIFPCarlosIII.ED.UT04.GrupoX
+namespace CIFPCarlosIII.ED.UT04.Grupo1
 
 {
+    /// <summary>
+    /// Se cambió el namespace a CIFPCarlosIII.ED.UT04.Grupo1
+    /// </summary>
     public class Personaje
     {
-        /*
-         * Se creo un atributo publico de tipo string llamado nombre
-         */
-        public string nombre; 
+        
+        /// <summary>
+        /// Se modificio el atributo nombre para que sea private y se añadieron las propiedades get y set
+        /// </summary>
+        private string nombre; 
         public int vida;
         public int nivel;
 
@@ -21,6 +25,12 @@ namespace CIFPCarlosIII.ED.UT04.GrupoX
             this.nombre = nombre;
             this.vida = 100;
             this.nivel = 1;
+        }
+
+        public string Nombre
+        {
+            get => nombre;
+            set => nombre = value;
         }
 
         public void Atacar()

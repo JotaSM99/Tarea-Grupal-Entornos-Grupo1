@@ -1,24 +1,26 @@
 using System;
 
-namespace CIFPCarlosIII.ED.UT04.GrupoX
+namespace CIFPCarlosIII.ED.UT04.Grupo1
 
 {
     public class Mago : Personaje
     {
         /*
          Se encapsulo el atributo mediante una propiedad publica con 
-         acceso a get y un internal set 
+         acceso a get y set 
          */
         public static int Mana { get; set; } 
         public string hechizo;
 
-        /*
-         * Se paso el parametro nombre de la clase base
-         */
+        
         public Mago()
         {
             
         }
+        
+        /// <summary>
+        /// Se paso el parametro nombre de la clase base Personaje a la clase hija Mago
+        /// </summary>
         public Mago(string nombre) :base(nombre)
         {
             Mana = 100;
@@ -35,7 +37,7 @@ namespace CIFPCarlosIII.ED.UT04.GrupoX
         {
             if (Mana >= 20)
             {
-                Console.WriteLine(nombre + " lanza " + hechizo + "!");
+                Console.WriteLine(Nombre + " lanza " + hechizo + "!");
                 Mana -= 20;
                 Console.WriteLine("Mana restante: " + Mana);
             }
@@ -49,7 +51,7 @@ namespace CIFPCarlosIII.ED.UT04.GrupoX
         {
             Mana += 30;
             if (Mana > 100) Mana = 100;
-            Console.WriteLine(nombre + " medita y recupera mana. Mana actual: " + Mana);
+            Console.WriteLine(Nombre + " medita y recupera mana. Mana actual: " + Mana);
         }
     }
 }
